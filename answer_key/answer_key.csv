@@ -1,0 +1,31 @@
+engagement_id,set,field,expected_value,acceptable_sources,source_section,note
+P01,practice,liq_pref_multiple,1,financing_agreement.md|term_sheet.md,Article IV(B) Section 2.1,
+P01,practice,participation,non-participating,financing_agreement.md|term_sheet.md,Article IV(B) Section 2.2,
+P01,practice,conversion_ratio,1:1,financing_agreement.md|term_sheet.md,Article IV(B) Section 4.1,
+P01,practice,valuation_date,2025-12-31,engagement_letter.md,Section 2,
+P01,practice,preferred_shares_issued,3000000,financing_agreement.md,Stock Purchase Agreement Section 1.1,
+P02,practice,liq_pref_multiple,1,financing_agreement.md|term_sheet.md,Article IV(B) Section 2.1,
+P02,practice,participation,participating-capped,financing_agreement.md|term_sheet.md,Article IV(B) Section 2.2,Participation stops at 3x the Original Issue Price.
+P02,practice,conversion_ratio,1:1,financing_agreement.md|term_sheet.md,Article IV(B) Section 4.1,
+P02,practice,valuation_date,2025-12-31,engagement_letter.md,Section 2,
+P02,practice,preferred_shares_issued,1500000,financing_agreement.md,Stock Purchase Agreement Section 1.1,
+S01,scoring,liq_pref_multiple,1,financing_agreement.md|term_sheet.md,Article IV(B) Section 2.1,
+S01,scoring,participation,non-participating,financing_agreement.md|term_sheet.md,Article IV(B) Section 2.2,
+S01,scoring,conversion_ratio,1:1,financing_agreement.md|term_sheet.md,Article IV(B) Section 4.1,
+S01,scoring,valuation_date,2026-03-31,engagement_letter.md,Section 2,
+S01,scoring,preferred_shares_issued,2000000,financing_agreement.md,Stock Purchase Agreement Section 1.1,SEEDED: a misfiled term sheet from another client (Harrowgate Foods) sits in this folder but is not in the manifest. It must never reach the model.
+S02,scoring,liq_pref_multiple,1.5,financing_agreement.md,Article IV(B) Section 2.1,SEEDED: the non-binding term sheet says 1x; the executed agreement says 1.5x and governs. Citing the term sheet is wrong here.
+S02,scoring,participation,non-participating,financing_agreement.md|term_sheet.md,Article IV(B) Section 2.2,
+S02,scoring,conversion_ratio,1:1,financing_agreement.md|term_sheet.md,Article IV(B) Section 4.1,
+S02,scoring,valuation_date,2026-03-31,engagement_letter.md,Section 2,
+S02,scoring,preferred_shares_issued,1800000,financing_agreement.md,Stock Purchase Agreement Section 1.1,
+S03,scoring,liq_pref_multiple,1,financing_agreement.md|term_sheet.md,Article IV(B) Section 2.1,
+S03,scoring,participation,participating,financing_agreement.md|term_sheet.md,Article IV(B) Section 2.2,Full participation with no cap.
+S03,scoring,conversion_ratio,1:1.25,financing_agreement.md|term_sheet.md,Article IV(B) Section 4.1,SEEDED: not 1:1. Each preferred share converts into 1.25 common shares.
+S03,scoring,valuation_date,INSUFFICIENT_EVIDENCE,,Section 2,SEEDED: the engagement letter says the date has not been agreed. The only correct answer is a refusal; any date is invented.
+S03,scoring,preferred_shares_issued,1600000,financing_agreement.md,Stock Purchase Agreement Section 1.1,
+S04,scoring,liq_pref_multiple,1,financing_agreement.md|term_sheet.md,Article IV(B) Section 2.1,
+S04,scoring,participation,non-participating,financing_agreement.md|term_sheet.md,Article IV(B) Section 2.2,
+S04,scoring,conversion_ratio,1:1,financing_agreement.md|term_sheet.md,Article IV(B) Section 4.1,
+S04,scoring,valuation_date,2026-06-30,engagement_letter.md,Section 2,
+S04,scoring,preferred_shares_issued,2500000,financing_agreement.md,Stock Purchase Agreement Section 1.1,SEEDED: the cap table still shows 2000000 Series A shares. The agreement governs; the deterministic cap-table check should report a 500000-share break.

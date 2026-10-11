@@ -1,0 +1,7 @@
+criterion_id,criterion,how_scored,pass_bar,set_by
+answer_correct,Did it get the answer right?,"Per field. The extracted value matches the answer key after normalization (1.5x = 1.5; 2,000,000 = 2000000; March 31, 2026 = 2026-03-31). A correct refusal (INSUFFICIENT_EVIDENCE where the key says so) counts as a right answer.",>= 0.95,Valuation specialist
+citation_correct,Did it cite the correct source?,"Per field where the key lists acceptable sources. The cited document must be one of them. Not scored when either the key or the model gives a refusal: the question is: when it answers, does it point at the right document?",>= 0.95,Valuation specialist
+invented,Did it invent anything?,"Count of fields where the model gave a value when the key says INSUFFICIENT_EVIDENCE, or cited a document that is not in the authorized set for that engagement (including documents that do not exist).",== 0,Valuation specialist
+corrections_needed,How often did an analyst have to correct it?,"Count of fields with a wrong answer or a wrong citation. Each is one correction an analyst would have to make.",recorded,Valuation specialist
+minutes_saved,How much time did it save?,"Recorded by the reviewer in the results file: minutes for the manual task minus minutes to run the model and review its output.",recorded,Reviewer
+run_cost,What did it cost to run?,"Recorded by the reviewer. For a local model this is hardware, power, and staff time to maintain it, not a per-use fee. The runner records wall-clock seconds per engagement from Ollama's total_duration.",recorded,Reviewer

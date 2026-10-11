@@ -1,0 +1,11 @@
+{
+  "model": "example-large-local",
+  "created_at": "2026-10-11T00:00:00Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\"liq_pref_multiple\": {\"value\": \"1x\", \"source_document\": \"financing_agreement.md\"}, \"participation\": {\"value\": \"participating (no cap)\", \"source_document\": \"financing_agreement.md\"}, \"conversion_ratio\": {\"value\": \"1:1.25\", \"source_document\": \"financing_agreement.md\"}, \"valuation_date\": {\"value\": \"INSUFFICIENT_EVIDENCE\", \"source_document\": \"\"}, \"preferred_shares_issued\": {\"value\": \"1,600,000\", \"source_document\": \"financing_agreement.md\"}}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 139500000000
+}
